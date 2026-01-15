@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +25,9 @@ public class LandingPage extends AbstractComponents{
 	@FindBy(css="input[type='submit']")
 	WebElement loginButton;
 	
+	@FindBy(id="toast-container")
+	WebElement errorMessage;
+	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client/");
 	}
@@ -39,6 +41,8 @@ public class LandingPage extends AbstractComponents{
 		return productCatalogue; 
 	}
 	
-	
+	public String getErrorMessage() {
+		return errorMessage.getText();
+	}
 
 }

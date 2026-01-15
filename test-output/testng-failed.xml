@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ecom.CreateOrderTest">
+      <class name="ecom.ErrorValidationTest">
         <methods>
-          <include name="createOrder"/>
+          <include name="errorValidationTest"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
         </methods>
-      </class> <!-- ecom.CreateOrderTest -->
+      </class> <!-- ecom.ErrorValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
