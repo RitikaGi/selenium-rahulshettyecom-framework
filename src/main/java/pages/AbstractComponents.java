@@ -19,10 +19,11 @@ public class AbstractComponents {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
-	
 	@FindBy(css="[routerlink*=cart]")
 	WebElement cartHeader;
+	
+	@FindBy(css="[routerlink*=myorders]")
+	WebElement orderHeader;
 	
 	public void waitForElementToAppear(By findBy) {
 		WebDriverWait wait = new WebDriverWait(driver,(Duration.ofSeconds(5)));
@@ -43,6 +44,12 @@ public class AbstractComponents {
 		cartHeader.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;
+	}
+	
+	public OrdersPage goToOrdersPage() {
+		orderHeader.click();
+		OrdersPage ordersPage = new OrdersPage(driver);
+		return ordersPage;
 	}
 
 }

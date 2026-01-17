@@ -10,16 +10,16 @@ import org.testng.annotations.Test;
 import pages.CartPage;
 import pages.CheckoutPage;
 import pages.ConfirmationPage;
-
+import pages.OrdersPage;
 import pages.ProductCatalogue;
 import testComponents.BaseTest;
 
 public class CreateOrderTest extends BaseTest{
+	String productName = "ADIDAS ORIGINAL";
 	
-	@Test
+	@Test(groups="Smoke Tests")
 	public void createOrder() throws InterruptedException, IOException {
 		
-		String productName = "ADIDAS ORIGINAL";
 		ProductCatalogue productCatalogue=landingPage.loginApplication("keshu@gmail.com", "Keshri@123");
 		List<WebElement> products=productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);
@@ -32,6 +32,14 @@ public class CreateOrderTest extends BaseTest{
 		ConfirmationPage confirmationPage=checkoutPage.submitOrder();
 		String confirmMessage = confirmationPage.verifyConfirmMessage();
 		Assert.assertEquals(confirmMessage, "THANKYOU FOR THE ORDER.");
+		
+	}
+	
+	@Test(dependsOnMethods="createOrder")
+	public void orderHistoryTest() {
+		ProductCatalogue productCatalogue=landingPage.loginApplication("keshu@gmail.com", "Keshri@123");
+		OrdersPage ordersPage=productCatalogue.goToOrdersPage();
+		Assert.assertTrue(ordersPage.verifyOrderIsDisplayed(productName));
 		
 	}
 	}

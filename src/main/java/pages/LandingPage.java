@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +29,8 @@ public class LandingPage extends AbstractComponents{
 	@FindBy(id="toast-container")
 	WebElement errorMessage;
 	
+	By toastMessage = By.id("toast-container");
+	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client/");
 	}
@@ -36,6 +39,8 @@ public class LandingPage extends AbstractComponents{
 		userEmail.sendKeys(username);
 		userPassword.sendKeys(password);
 		loginButton.click();
+		waitForElementToAppear(toastMessage);
+		
 		////object creation for the next page as we will land on product catalogue page
 		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		return productCatalogue; 

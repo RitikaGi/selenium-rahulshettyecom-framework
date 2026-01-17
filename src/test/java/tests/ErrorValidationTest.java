@@ -12,15 +12,15 @@ import testComponents.BaseTest;
 
 public class ErrorValidationTest extends BaseTest{
 	
-	@Test
-	public void loginValidationTest() {
+	@Test(groups="Smoke Tests")
+	public void invalidLoginTest() {
 		landingPage.loginApplication("keshu@gmail.com", "keshu12");
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 		
 	}
 	
 	@Test
-	public void productErrorValidation() {
+	public void invalidProductTest() {
 		String productName = "ADIDAS ORIGINAL";
 		ProductCatalogue productCatalogue=landingPage.loginApplication("keshu@gmail.com", "Keshri@123");
 		List<WebElement> products=productCatalogue.getProductList();
