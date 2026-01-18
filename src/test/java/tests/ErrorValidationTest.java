@@ -12,7 +12,7 @@ import testComponents.BaseTest;
 
 public class ErrorValidationTest extends BaseTest{
 	
-	@Test(groups="Smoke Tests")
+	@Test//(groups="Smoke Tests")
 	public void invalidLoginTest() {
 		landingPage.loginApplication("keshu@gmail.com", "keshu12");
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());

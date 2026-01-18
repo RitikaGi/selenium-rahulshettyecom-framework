@@ -1,45 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-17T19:23:54 IST" name="Suite" finished-at="2026-01-17T19:24:10 IST" duration-ms="16055">
+  <suite started-at="2026-01-18T17:24:15 IST" name="Suite" finished-at="2026-01-18T17:24:45 IST" duration-ms="30213">
     <groups>
       <group name="Smoke Tests">
-        <method signature="CreateOrderTest.createOrder()[pri:0, instance:tests.CreateOrderTest@3c46e67a]" name="createOrder" class="tests.CreateOrderTest"/>
-        <method signature="ErrorValidationTest.invalidLoginTest()[pri:0, instance:tests.ErrorValidationTest@66d18979]" name="invalidLoginTest" class="tests.ErrorValidationTest"/>
+        <method signature="CreateOrderTest.createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598]" name="createOrder" class="tests.CreateOrderTest"/>
       </group> <!-- Smoke Tests -->
     </groups>
-    <test started-at="2026-01-17T19:23:54 IST" name="Create Order Test" finished-at="2026-01-17T19:24:06 IST" duration-ms="12502">
-      <class name="tests.CreateOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.CreateOrderTest@3c46e67a]" started-at="2026-01-17T19:23:54 IST" name="launchApplication" finished-at="2026-01-17T19:23:58 IST" duration-ms="4010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createOrder()[pri:0, instance:tests.CreateOrderTest@3c46e67a]" started-at="2026-01-17T19:23:58 IST" name="createOrder" finished-at="2026-01-17T19:24:06 IST" duration-ms="8312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CreateOrderTest@3c46e67a]" started-at="2026-01-17T19:24:06 IST" name="tearDown" finished-at="2026-01-17T19:24:06 IST" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.CreateOrderTest -->
-    </test> <!-- Create Order Test -->
-    <test started-at="2026-01-17T19:24:06 IST" name="Error Validation Test" finished-at="2026-01-17T19:24:10 IST" duration-ms="3479">
+    <test started-at="2026-01-18T17:24:15 IST" name="Error Validation Test" finished-at="2026-01-18T17:24:42 IST" duration-ms="26896">
       <class name="tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@66d18979]" started-at="2026-01-17T19:24:06 IST" name="launchApplication" finished-at="2026-01-17T19:24:09 IST" duration-ms="2878" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:15 IST" name="launchApplication" finished-at="2026-01-18T17:24:22 IST" duration-ms="7675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="invalidLoginTest()[pri:0, instance:tests.ErrorValidationTest@66d18979]" started-at="2026-01-17T19:24:09 IST" name="invalidLoginTest" finished-at="2026-01-17T19:24:10 IST" duration-ms="496" status="PASS">
+        <test-method signature="invalidLoginTest()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:23 IST" name="invalidLoginTest" finished-at="2026-01-18T17:24:23 IST" duration-ms="805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@66d18979]" started-at="2026-01-17T19:24:10 IST" name="tearDown" finished-at="2026-01-17T19:24:10 IST" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:23 IST" name="tearDown" finished-at="2026-01-18T17:24:23 IST" duration-ms="157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=ErrorValidationTest.invalidLoginTest()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:23 IST" name="launchApplication" finished-at="2026-01-18T17:24:27 IST" duration-ms="3400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="invalidProductTest()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:27 IST" name="invalidProductTest" finished-at="2026-01-18T17:24:41 IST" duration-ms="14596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidProductTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:41 IST" name="tearDown" finished-at="2026-01-18T17:24:42 IST" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidProductTest status=SUCCESS method=ErrorValidationTest.invalidProductTest()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ErrorValidationTest -->
     </test> <!-- Error Validation Test -->
+    <test started-at="2026-01-18T17:24:15 IST" name="Create Order Test" finished-at="2026-01-18T17:24:45 IST" duration-ms="30213">
+      <class name="tests.CreateOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:15 IST" name="launchApplication" finished-at="2026-01-18T17:24:21 IST" duration-ms="6192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:21 IST" name="createOrder" data-provider="getData" finished-at="2026-01-18T17:24:31 IST" duration-ms="9931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Keshri@123, email=keshu@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrder -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:31 IST" name="tearDown" finished-at="2026-01-18T17:24:31 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createOrder status=SUCCESS method=CreateOrderTest.createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:31 IST" name="launchApplication" finished-at="2026-01-18T17:24:33 IST" duration-ms="1746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:33 IST" name="createOrder" data-provider="getData" finished-at="2026-01-18T17:24:42 IST" duration-ms="8760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Keshri@123, email=ritusingh@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrder -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:42 IST" name="tearDown" finished-at="2026-01-18T17:24:42 IST" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createOrder status=SUCCESS method=CreateOrderTest.createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:42 IST" name="launchApplication" finished-at="2026-01-18T17:24:43 IST" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:43 IST" name="orderHistoryTest" finished-at="2026-01-18T17:24:45 IST" depends-on-methods="tests.CreateOrderTest.createOrder" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:45 IST" name="tearDown" finished-at="2026-01-18T17:24:45 IST" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderHistoryTest status=SUCCESS method=CreateOrderTest.orderHistoryTest()[pri:0, instance:tests.CreateOrderTest@64b0598] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CreateOrderTest -->
+    </test> <!-- Create Order Test -->
   </suite> <!-- Suite -->
 </testng-results>

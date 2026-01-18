@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.CreateOrderTest" class="method navigator-link" hash-for-method="createOrder">createOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.CreateOrderTest" class="method navigator-link" hash-for-method="createOrder({password=Keshri@123, email=keshu@gmail.com, productName=ADIDAS ORIGINAL})">createOrder({password=Keshri@123, email=keshu@gmail.com, productName=ADIDAS ORIGINAL})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CreateOrderTest" class="method navigator-link" hash-for-method="createOrder({password=Keshri@123, email=ritusingh@gmail.com, productName=ADIDAS ORIGINAL})">createOrder({password=Keshri@123, email=ritusingh@gmail.com, productName=ADIDAS ORIGINAL})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.ErrorValidationTest" class="method navigator-link" hash-for-method="invalidLoginTest">invalidLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ErrorValidationTest" class="method navigator-link" hash-for-method="invalidProductTest">invalidProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CreateOrderTest" class="method navigator-link" hash-for-method="orderHistoryTest">orderHistoryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,6 +141,37 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.CreateOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrder({password=Keshri@123, email=keshu@gmail.com, productName=ADIDAS ORIGINAL})">
+                  </a> <!-- createOrder({password=Keshri@123, email=keshu@gmail.com, productName=ADIDAS ORIGINAL}) -->
+                  <span class="method-name">createOrder</span>
+                  <span class="parameters">({password=Keshri@123, email=keshu@gmail.com, productName=ADIDAS ORIGINAL})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrder({password=Keshri@123, email=ritusingh@gmail.com, productName=ADIDAS ORIGINAL})">
+                  </a> <!-- createOrder({password=Keshri@123, email=ritusingh@gmail.com, productName=ADIDAS ORIGINAL}) -->
+                  <span class="method-name">createOrder</span>
+                  <span class="parameters">({password=Keshri@123, email=ritusingh@gmail.com, productName=ADIDAS ORIGINAL})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderHistoryTest">
+                  </a> <!-- orderHistoryTest -->
+                  <span class="method-name">orderHistoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.ErrorValidationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -136,19 +182,11 @@
                   <span class="method-name">invalidLoginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CreateOrderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createOrder">
-                  </a> <!-- createOrder -->
-                  <span class="method-name">createOrder</span>
+                  <a name="invalidProductTest">
+                  </a> <!-- invalidProductTest -->
+                  <span class="method-name">invalidProductTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,23 +200,16 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;Smoke Tests&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;Smoke Tests&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Create Order Test&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testComponents.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Create Order Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.CreateOrderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Create Order Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Error Validation Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Error Validation Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.ErrorValidationTest&quot;/&gt;
     &lt;/classes&gt;
@@ -214,10 +245,6 @@
                 <span class="method-in-group-name">createOrder</span>
                 <br/>
               </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">invalidLoginTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -235,20 +262,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createOrder')
-data.setCell(0, 2, 'tests.CreateOrderTest')
-data.setCell(0, 3, 8312);
+data.setCell(0, 1, 'invalidProductTest')
+data.setCell(0, 2, 'tests.ErrorValidationTest')
+data.setCell(0, 3, 14596);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalidLoginTest')
-data.setCell(1, 2, 'tests.ErrorValidationTest')
-data.setCell(1, 3, 496);
+data.setCell(1, 1, 'createOrder')
+data.setCell(1, 2, 'tests.CreateOrderTest')
+data.setCell(1, 3, 9931);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createOrder')
+data.setCell(2, 2, 'tests.CreateOrderTest')
+data.setCell(2, 3, 8760);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'orderHistoryTest')
+data.setCell(3, 2, 'tests.CreateOrderTest')
+data.setCell(3, 3, 1309);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'invalidLoginTest')
+data.setCell(4, 2, 'tests.ErrorValidationTest')
+data.setCell(4, 3, 805);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -263,23 +302,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.ErrorValidationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">invalidProductTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CreateOrderTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">orderHistoryTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -288,33 +313,81 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.CreateOrderTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">4 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createOrder</span>
-                <span class="method-start">4013 ms</span>
+                <span class="method-name">createOrder({password=Keshri@123, email=keshu@gmail.com, productName=ADIDAS ORIGINAL})</span>
+                <span class="method-start">6204 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12328 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">12543 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidLoginTest</span>
-                <span class="method-start">15428 ms</span>
+                <span class="method-start">7677 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">15926 ms</span>
+                <span class="method-name">tearDown([TestResult name=invalidLoginTest status=SUCCESS method=ErrorValidationTest.invalidLoginTest()[pri:0...)</span>
+                <span class="method-start">8491 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">8650 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidProductTest</span>
+                <span class="method-start">12050 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=createOrder status=SUCCESS method=CreateOrderTest.createOrder(java.util.HashMap)[pr...)</span>
+                <span class="method-start">16144 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">16301 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrder({password=Keshri@123, email=ritusingh@gmail.com, productName=ADIDAS ORIGINAL})</span>
+                <span class="method-start">18049 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidProductTest status=SUCCESS method=ErrorValidationTest.invalidProductTest()[p...)</span>
+                <span class="method-start">26647 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=createOrder status=SUCCESS method=CreateOrderTest.createOrder(java.util.HashMap)[pr...)</span>
+                <span class="method-start">26811 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">27073 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orderHistoryTest</span>
+                <span class="method-start">28604 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=orderHistoryTest status=SUCCESS method=CreateOrderTest.orderHistoryTest()[pri:0, in...)</span>
+                <span class="method-start">29915 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
