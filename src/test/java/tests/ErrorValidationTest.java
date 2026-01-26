@@ -15,7 +15,7 @@ public class ErrorValidationTest extends BaseTest{
 	@Test//(groups="Smoke Tests")
 	public void invalidLoginTest() {
 		landingPage.loginApplication("keshu@gmail.com", "keshu12");
-		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", landingPage.getLoginMessage());
 		
 	}
 	

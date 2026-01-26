@@ -27,7 +27,17 @@ public class LandingPage extends AbstractComponents{
 	WebElement loginButton;
 	
 	@FindBy(id="toast-container")
-	WebElement errorMessage;
+	WebElement getLoginMessage;
+	
+	@FindBy(xpath="//div[text()='*Email is required']")
+	WebElement emailValidationMessage;
+	
+	@FindBy(xpath="//*[text()='*Password is required']")
+	WebElement passwordValidationMessage;
+	
+	@FindBy(css=".forgot-password-link")
+	WebElement forgetPasswordLink;
+	
 	
 	By toastMessage = By.id("toast-container");
 	
@@ -46,8 +56,25 @@ public class LandingPage extends AbstractComponents{
 		return productCatalogue; 
 	}
 	
-	public String getErrorMessage() {
-		return errorMessage.getText();
+	public void clickForgetPassword() {
+		forgetPasswordLink.click();
 	}
-
+	
+	public String getLoginMessage() {
+		return getLoginMessage.getText();
+	}
+	
+	public boolean emailValidationMessageIsVisible() {
+		return emailValidationMessage.isDisplayed();
+	}
+	
+	public boolean passwordValidationMessageIsVisible() {
+		return passwordValidationMessage.isDisplayed();
+	}
+	
+	public void loginToApplication(String username ,String password) {
+		userEmail.sendKeys(username);
+		userPassword.sendKeys(password);
+		loginButton.click();
+	}
 }

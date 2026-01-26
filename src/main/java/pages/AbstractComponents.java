@@ -19,6 +19,9 @@ public class AbstractComponents {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(css="button.btn i.fa-sign-out")
+	WebElement signOutButton;
+	
 	@FindBy(css="[routerlink*=cart]")
 	WebElement cartHeader;
 	
@@ -50,6 +53,10 @@ public class AbstractComponents {
 		orderHeader.click();
 		OrdersPage ordersPage = new OrdersPage(driver);
 		return ordersPage;
+	}
+	
+	public void signOut() {
+		signOutButton.click();
 	}
 
 }

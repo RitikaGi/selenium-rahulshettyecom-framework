@@ -1,129 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-18T17:24:15 IST" name="Suite" finished-at="2026-01-18T17:24:45 IST" duration-ms="30213">
+  <suite started-at="2026-01-26T16:14:26 IST" name="Default suite" finished-at="2026-01-26T16:14:52 IST" duration-ms="26038">
     <groups>
-      <group name="Smoke Tests">
-        <method signature="CreateOrderTest.createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598]" name="createOrder" class="tests.CreateOrderTest"/>
-      </group> <!-- Smoke Tests -->
     </groups>
-    <test started-at="2026-01-18T17:24:15 IST" name="Error Validation Test" finished-at="2026-01-18T17:24:42 IST" duration-ms="26896">
-      <class name="tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:15 IST" name="launchApplication" finished-at="2026-01-18T17:24:22 IST" duration-ms="7675" status="PASS">
+    <test started-at="2026-01-26T16:14:26 IST" name="Default test" finished-at="2026-01-26T16:14:52 IST" duration-ms="26038">
+      <class name="tests.auth.LoginTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:26 IST" name="launchApplication" finished-at="2026-01-26T16:14:30 IST" duration-ms="3547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="invalidLoginTest()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:23 IST" name="invalidLoginTest" finished-at="2026-01-18T17:24:23 IST" duration-ms="805" status="PASS">
+        <test-method signature="testValidLogin()[pri:1, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:30 IST" name="testValidLogin" description="TC001: Verify user can login with valid credentials" finished-at="2026-01-26T16:14:31 IST" duration-ms="870" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:23 IST" name="tearDown" finished-at="2026-01-18T17:24:23 IST" duration-ms="157" status="PASS">
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:31 IST" name="tearDown" finished-at="2026-01-26T16:14:31 IST" duration-ms="145" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=ErrorValidationTest.invalidLoginTest()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9] output={null}]]]>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin()[pri:1, instance:tests.auth.LoginTest@408d971b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:23 IST" name="launchApplication" finished-at="2026-01-18T17:24:27 IST" duration-ms="3400" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:31 IST" name="launchApplication" finished-at="2026-01-26T16:14:34 IST" duration-ms="3734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="invalidProductTest()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:27 IST" name="invalidProductTest" finished-at="2026-01-18T17:24:41 IST" duration-ms="14596" status="PASS">
+        <test-method signature="testLoginWithInvalidEmail()[pri:2, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:34 IST" name="testLoginWithInvalidEmail" description="TC002: Verify login fails with invalid email" finished-at="2026-01-26T16:14:35 IST" duration-ms="847" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidProductTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.ErrorValidationTest@3fce8fd9]" started-at="2026-01-18T17:24:41 IST" name="tearDown" finished-at="2026-01-18T17:24:42 IST" duration-ms="131" status="PASS">
+        </test-method> <!-- testLoginWithInvalidEmail -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:35 IST" name="tearDown" finished-at="2026-01-26T16:14:35 IST" duration-ms="184" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidProductTest status=SUCCESS method=ErrorValidationTest.invalidProductTest()[pri:0, instance:tests.ErrorValidationTest@3fce8fd9] output={null}]]]>
+                <![CDATA[[TestResult name=testLoginWithInvalidEmail status=SUCCESS method=LoginTest.testLoginWithInvalidEmail()[pri:2, instance:tests.auth.LoginTest@408d971b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.ErrorValidationTest -->
-    </test> <!-- Error Validation Test -->
-    <test started-at="2026-01-18T17:24:15 IST" name="Create Order Test" finished-at="2026-01-18T17:24:45 IST" duration-ms="30213">
-      <class name="tests.CreateOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:15 IST" name="launchApplication" finished-at="2026-01-18T17:24:21 IST" duration-ms="6192" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:36 IST" name="launchApplication" finished-at="2026-01-26T16:14:40 IST" duration-ms="4573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:21 IST" name="createOrder" data-provider="getData" finished-at="2026-01-18T17:24:31 IST" duration-ms="9931" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Keshri@123, email=keshu@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testLoginWithInvalidPassword()[pri:3, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:40 IST" name="testLoginWithInvalidPassword" description="TC003: Verify login fails with invalid password" finished-at="2026-01-26T16:14:41 IST" duration-ms="1090" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createOrder -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:31 IST" name="tearDown" finished-at="2026-01-18T17:24:31 IST" duration-ms="156" status="PASS">
+        </test-method> <!-- testLoginWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:41 IST" name="tearDown" finished-at="2026-01-26T16:14:41 IST" duration-ms="140" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createOrder status=SUCCESS method=CreateOrderTest.createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598] output={null}]]]>
+                <![CDATA[[TestResult name=testLoginWithInvalidPassword status=SUCCESS method=LoginTest.testLoginWithInvalidPassword()[pri:3, instance:tests.auth.LoginTest@408d971b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:31 IST" name="launchApplication" finished-at="2026-01-18T17:24:33 IST" duration-ms="1746" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:41 IST" name="launchApplication" finished-at="2026-01-26T16:14:46 IST" duration-ms="4458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:33 IST" name="createOrder" data-provider="getData" finished-at="2026-01-18T17:24:42 IST" duration-ms="8760" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Keshri@123, email=ritusingh@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testLoginWithEmptyCredentials()[pri:4, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:46 IST" name="testLoginWithEmptyCredentials" description="TC004: Verify login fails with empty credentials" finished-at="2026-01-26T16:14:47 IST" duration-ms="1113" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createOrder -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:42 IST" name="tearDown" finished-at="2026-01-18T17:24:42 IST" duration-ms="258" status="PASS">
+        </test-method> <!-- testLoginWithEmptyCredentials -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:47 IST" name="tearDown" finished-at="2026-01-26T16:14:47 IST" duration-ms="210" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createOrder status=SUCCESS method=CreateOrderTest.createOrder(java.util.HashMap)[pri:0, instance:tests.CreateOrderTest@64b0598] output={null}]]]>
+                <![CDATA[[TestResult name=testLoginWithEmptyCredentials status=SUCCESS method=LoginTest.testLoginWithEmptyCredentials()[pri:4, instance:tests.auth.LoginTest@408d971b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:42 IST" name="launchApplication" finished-at="2026-01-18T17:24:43 IST" duration-ms="1531" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:47 IST" name="launchApplication" finished-at="2026-01-26T16:14:49 IST" duration-ms="1697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="orderHistoryTest()[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:43 IST" name="orderHistoryTest" finished-at="2026-01-18T17:24:45 IST" depends-on-methods="tests.CreateOrderTest.createOrder" duration-ms="1309" status="PASS">
+        <test-method signature="testForgetPasswordLink()[pri:5, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:49 IST" name="testForgetPasswordLink" description="TC005: Verify forgot password link functionality" finished-at="2026-01-26T16:14:49 IST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orderHistoryTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.CreateOrderTest@64b0598]" started-at="2026-01-18T17:24:45 IST" name="tearDown" finished-at="2026-01-18T17:24:45 IST" duration-ms="183" status="PASS">
+        </test-method> <!-- testForgetPasswordLink -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:49 IST" name="tearDown" finished-at="2026-01-26T16:14:49 IST" duration-ms="132" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=orderHistoryTest status=SUCCESS method=CreateOrderTest.orderHistoryTest()[pri:0, instance:tests.CreateOrderTest@64b0598] output={null}]]]>
+                <![CDATA[[TestResult name=testForgetPasswordLink status=SUCCESS method=LoginTest.testForgetPasswordLink()[pri:5, instance:tests.auth.LoginTest@408d971b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.CreateOrderTest -->
-    </test> <!-- Create Order Test -->
-  </suite> <!-- Suite -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:49 IST" name="launchApplication" finished-at="2026-01-26T16:14:51 IST" duration-ms="1759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testLogout()[pri:6, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:51 IST" name="testLogout" description="TC006: Verify logout functionality" finished-at="2026-01-26T16:14:52 IST" duration-ms="1104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.auth.LoginTest@408d971b]" started-at="2026-01-26T16:14:52 IST" name="tearDown" finished-at="2026-01-26T16:14:52 IST" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogout status=SUCCESS method=LoginTest.testLogout()[pri:6, instance:tests.auth.LoginTest@408d971b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.auth.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
