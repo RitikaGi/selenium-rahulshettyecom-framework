@@ -18,10 +18,12 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.LandingPage;
 
+
 public class BaseTest {
 	
 	public WebDriver driver;
 	public LandingPage landingPage;
+	
 	
 	public void initializeDriver() throws IOException {
 		
@@ -47,6 +49,7 @@ public class BaseTest {
 	public LandingPage launchApplication() throws IOException {
 		initializeDriver();
 		landingPage = new LandingPage(driver);
+		
 		landingPage.goTo();
 		return landingPage;
 	}
@@ -57,7 +60,7 @@ public class BaseTest {
 			String testCaseName = result.getName();
 			getScreenshot(testCaseName, driver);
 		}
-		driver.close();
+	//	driver.close();
 	}
 	
 	public String getScreenshot(String testCaseName,WebDriver driver) throws IOException {

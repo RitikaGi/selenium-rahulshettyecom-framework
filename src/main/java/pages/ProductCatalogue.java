@@ -26,6 +26,21 @@ WebDriver driver;
 	@FindBy(id="toast-container")
 	WebElement toastContainer;
 	
+	@FindBy(css="input[name='search']")
+	WebElement searchBox;
+	
+	@FindBy(css="input[name='minPrice']")
+	WebElement minPrice;
+	
+	@FindBy(css="input[name='maxPrice']")
+	WebElement maxPrice;
+	
+	@FindBy(xpath="//label[text()='electronics']/preceding-sibling::input")
+	WebElement electronicsCategory;
+	
+	
+	
+	
 	By productsBy= By.cssSelector(".mb-3");
 	By addToCart = By.cssSelector(".card-body button:last-of-type");
 	By toastMessage = By.id("toast-container");
